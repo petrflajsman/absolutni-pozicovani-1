@@ -42,3 +42,4 @@ save_button = tk.Button(qr_frame, text="Uložit QR kód", command=save_qr_code)
 save_button.pack()
 
 root.mainloop()
+xd
