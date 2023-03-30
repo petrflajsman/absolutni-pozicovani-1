@@ -1,0 +1,64 @@
+.div {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    float: left;
+    margin: 15px;
+  }
+  
+  /* pro vzdálenost od krajů těla */
+  .div:first-child {
+    margin-left: 15px;
+  }
+  
+  .div:last-child {
+    margin-right: 15px;
+  }
+  
+  /* pro vzájemnou vzdálenost */
+  .div:nth-child(2n) {
+    clear: left;
+  }
+/* příklad pro nastavení různých barev */
+.div1 {
+    background-color: red;
+  }
+  
+  .div2 {
+    background-color: green;
+  }
+  
+  .div3 {
+    background-color: blue;
+  }
+    
+body {
+    margin: 0px;
+    padding: 10px;
+}
+
+p { margin: 0px; padding: 0px; }
+
+.new_line {
+    clear: both;
+    /* clear: left; clear: right; */
+}
+
+.ukazka_inline {
+    width: 100px; height: 100px; 
+    background-color: chartreuse;
+    display: block;
+}
+
+.ukazka_block {
+    width: 100px; height: 100px; 
+    background-color:darkorange;      
+}
+
+.ukazka_inline, .ukazka_block {
+    float: left;
+    border: 1px solid black;
+    margin-bottom: 10px; 
+    margin-right: 10px;
+}
